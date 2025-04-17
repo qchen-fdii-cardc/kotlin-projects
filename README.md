@@ -170,6 +170,14 @@ java args line: org.example/org.example.AppKt 1 2 3 4 5
 
 大概，通过task的名字，我们基本上都能够猜到这个task是干啥的。
 
+最后补充一点，如果我们无视项目，直接运行某个task，那么就相当于针对projects中的所有项目运行这个task。
+
+```bash
+./gradlew build
+```
+
+会依次（按照`settings.gradle.kts`文件中定义的顺序）针对每个项目运行`build` task。
+
 ### 总结
 
 Gradle Wrapper是一个非常方便的工具，它可以帮助我们快速地构建项目。Gradle Wrapper的实现原理是：
