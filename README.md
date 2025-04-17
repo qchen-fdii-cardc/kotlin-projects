@@ -50,7 +50,7 @@ OS:           Linux 5.15.167.4-microsoft-standard-WSL2 amd64
 ```quote
 distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
-distributionUrl=https\://mirrors.aliyun.com/github/releases/gradle/gradle-distributions/v8.4.0/gradle-8.4-bin.zip
+distributionUrl=https\://mirrors.aliyun.com/gradle/distributions/v8.10.2/gradle-8.10.2-all.zip
 networkTimeout=10000
 validateDistributionUrl=true
 zipStoreBase=GRADLE_USER_HOME
@@ -63,7 +63,7 @@ zipStorePath=wrapper/dists
 
 首先，我们可以看看`settings.gradle.kts`文件，这个文件用于管理项目，这个后缀说明这个文件是Kotlin写的。过去，这个文件是Groovy写的，现在Gradle已经默认支持Kotlin。
 
-```kotlin
+```kotlinscript
 rootProject.name = "kotlin-projects"
 include("app")
 include("anotherApp")
