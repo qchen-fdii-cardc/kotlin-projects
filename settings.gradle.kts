@@ -10,5 +10,6 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "argparser"
+rootProject.name = "kotlin-fun"
 include("app")
+include("anotherApp")
