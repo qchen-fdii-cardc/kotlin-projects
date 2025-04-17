@@ -10,6 +10,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "kotlin-fun"
+rootProject.name = "kotlin-projects"
 include("app")
 include("anotherApp")
+include("javafx-app1")
