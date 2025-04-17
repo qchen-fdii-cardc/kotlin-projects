@@ -4,6 +4,17 @@
  * The settings file is used to specify which projects to include in your build.
  * For more detailed information on multi-project builds, please refer to https://docs.gradle.org/8.10.2/userguide/multi_project_builds.html in the Gradle documentation.
  */
+pluginManagement {
+    repositories {
+        maven { url = uri("https://mirrors.tencent.com/nexus/repository/gradle-plugins/") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/spring-plugin") }
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+        maven("https://plugins.gradle.org/m2/")
+    }
+}
 
 plugins {
     // Apply the foojay-resolver plugin to allow automatic download of JDKs
@@ -19,6 +30,8 @@ include("javafx-app2")
 // set up parallel execution, using all available threads
 gradle.startParameter.isParallelProjectExecutionEnabled = true
 // set up the maximum number of parallel threads to use
-gradle.startParameter.maxWorkerCount = Runtime.getRuntime().availableProcessors() / 2
+gradle.startParameter.maxWorkerCount = Runtime.getRuntime().availableProcessors() - 2
 // display the number of parallel threads used
-println("=== Using ${gradle.startParameter.maxWorkerCount} parallel threads for execution. = ==")
+println("=== Using ${gradle.startParameter.maxWorkerCount} parallel threads for execution. ===")
+
+// set up mirrors for plugins

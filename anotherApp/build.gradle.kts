@@ -17,6 +17,9 @@ plugins {
 
 buildscript {
     repositories {
+        maven { url = uri("https://mirrors.tencent.com/nexus/repository/gradle-plugins/") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/spring-plugin") }
         maven { url = uri("https://plugins.gradle.org/m2/") }
         mavenCentral()
     }
