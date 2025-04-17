@@ -14,3 +14,11 @@ rootProject.name = "kotlin-projects"
 include("app")
 include("anotherApp")
 include("javafx-app1")
+include("javafx-app2")
+
+// set up parallel execution, using all available threads
+gradle.startParameter.isParallelProjectExecutionEnabled = true
+// set up the maximum number of parallel threads to use
+gradle.startParameter.maxWorkerCount = Runtime.getRuntime().availableProcessors() / 2
+// display the number of parallel threads used
+println("=== Using ${gradle.startParameter.maxWorkerCount} parallel threads for execution. = ==")

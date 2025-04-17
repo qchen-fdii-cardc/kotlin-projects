@@ -14,7 +14,7 @@ This repository contains a collection of Kotlin projects that I have created.
 
 ```quote
 JDK: 21.0.6
-Gradle: 8.4
+Gradle: 8.4 --> 8.10.2
 ```
 
 ## Gradle Crush Tutorial on My Own Words
