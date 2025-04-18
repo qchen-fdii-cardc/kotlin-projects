@@ -39,12 +39,14 @@ A collection of Kotlin projects demonstrating various Kotlin development concept
 `;
 
     // Get the main content
-    const mainContent = document.querySelector('article.markdown-body');
+    const mainContent = document.querySelector('h2');
     if (mainContent) {
         // Add header
-        mainContent.insertAdjacentHTML('afterbegin', headerTemplate);
-
+        mainContent.insertAdjacentHTML('beforebegin', headerTemplate);
+    }
+    const footerContent = document.querySelectorAll('p').last();
+    if (footerContent) {
         // Add footer
-        mainContent.insertAdjacentHTML('beforeend', footerTemplate);
+        footerContent.insertAdjacentHTML('afterend', footerTemplate);
     }
 }); 
