@@ -1,6 +1,19 @@
 # Kotlin Projects
 
-This repository contains a collection of Kotlin projects that I have created.
+<div align="center">
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.10-blue.svg)](https://kotlinlang.org)
+[![Gradle](https://img.shields.io/badge/Gradle-8.10.2-green.svg)](https://gradle.org)
+[![JDK](https://img.shields.io/badge/JDK-21.0.6-orange.svg)](https://www.oracle.com/java/technologies/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+A collection of Kotlin projects demonstrating various Kotlin development concepts and practices.
+
+[Repository](https://github.com/qchen-fdii-cardc/kotlin-projects) | [Author](https://github.com/qchen-fdii-cardc/)
+
+</div>
+
+## 前言
 
 计划整理一组Kotlin项目，介绍Kotlin开发。目前把这个一系列整理为一个Gradle项目。
 
@@ -207,3 +220,17 @@ include("anotherApp")
 ```
 
 这样就可以看到另一个App的所有任务。
+
+<div align="center">
+<hr>
+
+<a href="https://github.com/qchen-fdii-cardc/">
+  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Author" width="40" height="40" style="border-radius: 50%;"/>
+</a>
+
+**Qin Chen**  
+**Developer**
+
+[![GitHub](https://img.shields.io/badge/GitHub-qchen--fdii--cardc-181717?style=flat&logo=github)](https://github.com/qchen-fdii-cardc/)
+
+</div>
