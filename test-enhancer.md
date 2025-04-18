@@ -1,4 +1,4 @@
-<script src="/assets/js/md-enhancer.js"></script>
+<script src="./assets/js/md-enhancer.js"></script>
 
 # Test Markdown Enhancement
 

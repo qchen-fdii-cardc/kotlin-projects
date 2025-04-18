@@ -1,6 +1,4 @@
-<script src="/assets/js/md-enhancer.js"></script>
-
-# Kotlin Projects
+<script src="./assets/js/md-enhancer.js"></script>
 
 ## 前言
 
